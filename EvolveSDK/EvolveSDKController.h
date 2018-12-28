@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EvolveSDKController : NSObject
+
 -(void)loadView:(UINavigationController *)navigationController;
 
 @end
