@@ -1,0 +1,37 @@
+[
+    {
+        "scenes": [
+            {
+                "objects": [],
+                "model": [
+                    {
+                        "actions": [],
+                        "asset": "model",
+                        "transform": {
+                            "posz": 0,
+                            "rotatez": 0,
+                            "posy": 0,
+                            "rotatex": 0,
+                            "rotatey": 0,
+                            "posx": 0,
+                            "scalex": 0.09044597744941713,
+                            "scaley": 0.04761435091495514,
+                            "scalez": 0.08942712545394899
+                        },
+                        "uuid": "5c1cc12168e4814da6237b65",
+                        "scene_number": 0,
+                        "description": [],
+                        "appearance": {
+                            "obj": "https://b18fd817c4e7472839aa-fd662f8b5a7cc6ec327f618e9b3b8029.ssl.cf2.rackcdn.com/media/others/20181221103158504366model.glb",
+                            "description": "",
+                            "title": "model",
+                            "thumbnail": "https://beta.evolvear.io/evolve-ar/static/app/images/3d-widget.png"
+                        },
+                        "type": "display",
+                        "transitions": []
+                    }
+                ]
+            }
+        ]
+    }
+]

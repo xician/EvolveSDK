@@ -1,0 +1,6 @@
+framework module NYT360Video {
+  umbrella header "NYT360Video-umbrella.h"
+
+  export *
+  module * { export * }
+}

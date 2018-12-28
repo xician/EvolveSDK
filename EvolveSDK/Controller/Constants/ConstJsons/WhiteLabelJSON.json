@@ -1,0 +1,62 @@
+[
+    {
+        "scenes": [
+            {
+                "objects": [
+                    {
+                        "uuid": "5c1397be68e48167fb76a67a",
+                        "transform": {
+                            "rotatez": 0,
+                            "scaley": 1.2063615694681473,
+                            "rotatey": 0,
+                            "scalex": 4.526268005371094,
+                            "posy": -4.630861759185791,
+                            "posx": -0.3898472785949707,
+                            "scalez": 0.0060318079218481205,
+                            "posz": -0.09218816007366948,
+                            "rotatex": 0.102916
+                        },
+                        "transitions": [],
+                        "type": "display",
+                        "asset": "image",
+                        "appearance": {
+                            "background": "https://b18fd817c4e7472839aa-fd662f8b5a7cc6ec327f618e9b3b8029.ssl.cf2.rackcdn.com/media/images/20181214114502267974moredetail's.png"
+                        },
+                        "scene_number": 0,
+                        "actions": []
+                    },
+                    {
+                        "uuid": "5c1396d668e48167fb76a679",
+                        "transform": {
+                            "rotatez": 0,
+                            "scaley": 0.04241507675534715,
+                            "rotatey": -3.141593,
+                            "scalex": 0.04241508310145002,
+                            "posy": 1.0397959301524302,
+                            "posx": 0.9041164773504641,
+                            "scalez": 0.04241508956459967,
+                            "posz": 0.3,
+                            "rotatex": 0.837013
+                        },
+                        "transitions": [],
+                        "type": "display",
+                        "asset": "model",
+                        "appearance": {
+                            "obj": "https://b18fd817c4e7472839aa-fd662f8b5a7cc6ec327f618e9b3b8029.ssl.cf2.rackcdn.com/media/others/20181214114109151186Model1_1WlnRJL.glb",
+                            "thumbnail": ""
+                        },
+                        "scene_number": 0,
+                        "actions": []
+                    }
+                ]
+            }
+        ],
+        "marker": {
+            "scaley": 13.432155074116306,
+            "markerimage": "https://b18fd817c4e7472839aa-fd662f8b5a7cc6ec327f618e9b3b8029.ssl.cf2.rackcdn.com/media/markers/m5c13968968e48167fb76a677.png",
+            "scalex": 19,
+            "scalez": -0.0002,
+            "name": "ManuLife1"
+        }
+    }
+]
