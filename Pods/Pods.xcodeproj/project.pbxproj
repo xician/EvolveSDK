@@ -736,9 +736,11 @@
 		A743BC4B2CF5E6BF419ACADDB0972787 /* TAAbstractDotView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAAbstractDotView.h; path = TAPageControl/TAAbstractDotView.h; sourceTree = "<group>"; };
 		A74EAC69601EE85A5812A6B977DD8F4F /* LOTShapeStar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeStar.m; path = "lottie-ios/Classes/Models/LOTShapeStar.m"; sourceTree = "<group>"; };
 		A762BDFC981754CFC4176AB9C4DDAC89 /* Pods-EvolveSDK-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EvolveSDK-resources.sh"; sourceTree = "<group>"; };
+		A76C73FA957C1D8D230FE4F6BB9A0ABF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A9264340FCAB143583CF617CCFFBE950 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92D6D4A4E942B618286BD7CAAF65674 /* SDWebImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoderHelper.h; path = SDWebImage/SDWebImageCoderHelper.h; sourceTree = "<group>"; };
 		A973C8CBB605CA9C682A8C954E36F32E /* NYT360EulerAngleCalculations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYT360EulerAngleCalculations.h; path = Sources/NYT360EulerAngleCalculations.h; sourceTree = "<group>"; };
+		A9D9B34C2A8DE1CBCDB24F1251247940 /* EvolveSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = EvolveSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABB6C1B8DABCBCE1555BA9D53483455D /* LOTRenderNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTRenderNode.m; path = "lottie-ios/Classes/RenderSystem/LOTRenderNode.m"; sourceTree = "<group>"; };
 		AC3AC5C8306CF603AB8E9B6B6D82EE2B /* SDWebImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoderHelper.m; path = SDWebImage/SDWebImageCoderHelper.m; sourceTree = "<group>"; };
 		ADD6BF66FC3AF90B5867F0EC918964B0 /* GLTFSceneKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GLTFSceneKit-umbrella.h"; sourceTree = "<group>"; };
@@ -1139,6 +1141,15 @@
 			path = TAPageControl;
 			sourceTree = "<group>";
 		};
+		2B7DCD3E76EEBCBA0EF0427BA60E3601 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9B34C2A8DE1CBCDB24F1251247940 /* EvolveSDK.podspec */,
+				A76C73FA957C1D8D230FE4F6BB9A0ABF /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		4928D0BDF04031F1F78EC5B69BD3F8F5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1341,6 +1352,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CC808DC4ECEFE8C832B4943C6202158D /* Development Pods */,
 				E9BBA87307E12AD3D2DC5A8F61FBC157 /* Frameworks */,
 				18912A5ABB45F49759361CCFFD290BAE /* Pods */,
 				5EAE5AC85D51A573E365B54D1C9425C4 /* Products */,
@@ -1414,6 +1426,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PVOnboardKit";
+			sourceTree = "<group>";
+		};
+		AC92F2678769E2D70F904AAC50FC91BD /* EvolveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2B7DCD3E76EEBCBA0EF0427BA60E3601 /* Pod */,
+			);
+			name = EvolveSDK;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B07C740DA4FE409691A3BED68F1E2C2E /* Support Files */ = {
@@ -1591,6 +1612,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		CC808DC4ECEFE8C832B4943C6202158D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC92F2678769E2D70F904AAC50FC91BD /* EvolveSDK */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		DD7670D0E6A1B0711F398147CEFEF690 /* NYAlertViewController */ = {
@@ -2899,42 +2928,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACDDC18320DDBD73ED3827DB0BB9156 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8943EE00A9DF745BC56956C25D126B2F /* NYAlertViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NYAlertViewController/NYAlertViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NYAlertViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NYAlertViewController/NYAlertViewController.modulemap";
-				PRODUCT_MODULE_NAME = NYAlertViewController;
-				PRODUCT_NAME = NYAlertViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1D12FD2DC538FFE7A3156D06ED463235 /* Release */ = {
+		031FE76807C8D3FAA6167507EB26A0F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7A6112C00B6BD5D6B57DE69386E4878 /* lottie-ios.xcconfig */;
 			buildSettings = {
@@ -2950,7 +2944,145 @@
 				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/lottie-ios/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12E35CA23AF9EA3AE2B1E758F3114A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58543513F4F25689AE0615665EFEA6D8 /* MBCircularProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = MBCircularProgressBar;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		143847DBE7ABC03ED22EDFF3A98F853C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59090690A4D1DB819D47C309C10B037 /* iCarousel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
+				PRODUCT_MODULE_NAME = iCarousel;
+				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1ED67928B75DD90D9F7547CCCEC132C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97CA5FE347730D9419DC994AEEBEEA5 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		235CAA4883378168F2701145E670CD52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A6112C00B6BD5D6B57DE69386E4878 /* lottie-ios.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2969,7 +3101,279 @@
 			};
 			name = Release;
 		};
-		1D93A93CB7A57FAC213ABDE803EFB2AD /* Release */ = {
+		25EEF12D1710F4EF818566725A09BC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4809A7F44E9640D87EAF22BC0EF3731D /* TAPageControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TAPageControl/TAPageControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TAPageControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TAPageControl/TAPageControl.modulemap";
+				PRODUCT_MODULE_NAME = TAPageControl;
+				PRODUCT_NAME = TAPageControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3204E783DB359E81CB8E4604A251DD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAF6932994ED96AA75E4355E8A522E6 /* Pods-EvolveSDK.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EvolveSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EvolveSDK/Pods-EvolveSDK.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37FFD49D5A6448C18418B28A57E1EE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF476F1AA2775919E390E6B066E8521 /* PopupKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PopupKit/PopupKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PopupKit/PopupKit.modulemap";
+				PRODUCT_MODULE_NAME = PopupKit;
+				PRODUCT_NAME = PopupKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		41457F92DF9D0DCA6C4E5757EDBEFD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7128D4EA99FA5CE735C65A41B175D17C /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B181BEEEA42ED26F65687DF96612A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97CA5FE347730D9419DC994AEEBEEA5 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5025E68566D5C18A4CCE574401B0460E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58543513F4F25689AE0615665EFEA6D8 /* MBCircularProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = MBCircularProgressBar;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CDF255B5B906A0AE3A3724A66D059EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0004FBD91314ED601CA570B4A017247D /* GLTFSceneKit.xcconfig */;
 			buildSettings = {
@@ -2986,7 +3390,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GLTFSceneKit/GLTFSceneKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GLTFSceneKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3007,231 +3411,57 @@
 			};
 			name = Release;
 		};
-		260BDC313502E751187DDB52C2600992 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7128D4EA99FA5CE735C65A41B175D17C /* SDWebImage.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
-				PRODUCT_MODULE_NAME = SDWebImage;
-				PRODUCT_NAME = SDWebImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		26D5F7D5A735E5D97221CC19F5803241 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3133019439A5A789952E3822F738B54 /* LGSideMenuController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LGSideMenuController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/LGSideMenuController/LGSideMenuController.modulemap";
-				PRODUCT_MODULE_NAME = LGSideMenuController;
-				PRODUCT_NAME = LGSideMenuController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		276C1360916B744DDECFB864D8BBF888 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C59090690A4D1DB819D47C309C10B037 /* iCarousel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
-				PRODUCT_MODULE_NAME = iCarousel;
-				PRODUCT_NAME = iCarousel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		29E1C12D7CBEE0058FA77D6B4A71169E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 913DC60C79E8852CA556075B7F69F28A /* NYT360Video.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NYT360Video/NYT360Video-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NYT360Video/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NYT360Video/NYT360Video.modulemap";
-				PRODUCT_MODULE_NAME = NYT360Video;
-				PRODUCT_NAME = NYT360Video;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3AE8D352EDCC889CE97A89AF29A2FAA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3133019439A5A789952E3822F738B54 /* LGSideMenuController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LGSideMenuController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/LGSideMenuController/LGSideMenuController.modulemap";
-				PRODUCT_MODULE_NAME = LGSideMenuController;
-				PRODUCT_NAME = LGSideMenuController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3D5E8AEFF07B935AC266439D41B89938 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BF476F1AA2775919E390E6B066E8521 /* PopupKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PopupKit/PopupKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PopupKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PopupKit/PopupKit.modulemap";
-				PRODUCT_MODULE_NAME = PopupKit;
-				PRODUCT_NAME = PopupKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4540190CB8CEADB9FB79FC6BC566B698 /* Debug */ = {
+		6BF5D6818B2556AD82E6F4B969EA5951 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58543513F4F25689AE0615665EFEA6D8 /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
 				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/ResourceBundle-MBCircularProgressBar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MBCircularProgressBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
+			name = Release;
+		};
+		7046C6CC3BCCF3422D8BF8C110974ECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524B2895438780187764F52AF119DE29 /* UIView+Shimmer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIView+Shimmer/UIView+Shimmer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIView+Shimmer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIView+Shimmer/UIView+Shimmer.modulemap";
+				PRODUCT_MODULE_NAME = UIView_Shimmer;
+				PRODUCT_NAME = UIView_Shimmer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
 			name = Debug;
 		};
-		4DB076A6A6D146745987D12CCC786C90 /* Release */ = {
+		705DF14097CF3C352B2BD0656CACCA96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F1C66424FEFC7A990BD7CD47919AA1B /* PVOnboardKit.xcconfig */;
 			buildSettings = {
@@ -3247,7 +3477,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PVOnboardKit/PVOnboardKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PVOnboardKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3260,97 +3490,12 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4EB11D87C13646CB50E110B13CB569FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7128D4EA99FA5CE735C65A41B175D17C /* SDWebImage.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
-				PRODUCT_MODULE_NAME = SDWebImage;
-				PRODUCT_NAME = SDWebImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		5E976D55E1EF0D9C0B975D7F8DC3574E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCE922A329CE464D82D0FCB1EABD14BD /* youtube-ios-player-helper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
-				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
-				PRODUCT_NAME = youtube_ios_player_helper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6862771EC5A50BE4C73CD7C089D7647C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58543513F4F25689AE0615665EFEA6D8 /* MBCircularProgressBar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
-				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/ResourceBundle-MBCircularProgressBar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = MBCircularProgressBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		83148474C91A07E065AF79FA72B9FF4E /* Debug */ = {
+		759F892B4C440EADA2C3787F450AFD16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4809A7F44E9640D87EAF22BC0EF3731D /* TAPageControl.xcconfig */;
 			buildSettings = {
@@ -3366,7 +3511,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TAPageControl/TAPageControl-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TAPageControl/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3379,12 +3524,83 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		8322AE3FB6DF16A80BCBA121575DBB8A /* Debug */ = {
+		7B4D6237A69561DA0F25D48DA7CCEA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524B2895438780187764F52AF119DE29 /* UIView+Shimmer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIView+Shimmer/UIView+Shimmer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIView+Shimmer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIView+Shimmer/UIView+Shimmer.modulemap";
+				PRODUCT_MODULE_NAME = UIView_Shimmer;
+				PRODUCT_NAME = UIView_Shimmer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81C3EA0A8AD0283CC733C95D67C1B0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3133019439A5A789952E3822F738B54 /* LGSideMenuController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LGSideMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LGSideMenuController/LGSideMenuController.modulemap";
+				PRODUCT_MODULE_NAME = LGSideMenuController;
+				PRODUCT_NAME = LGSideMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -3437,7 +3653,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3448,9 +3664,9 @@
 			};
 			name = Debug;
 		};
-		87B0982BB0E18E1BE03792C7E6DAB638 /* Debug */ = {
+		87D2A92BB91E12A7F4B9E870905E67B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 524B2895438780187764F52AF119DE29 /* UIView+Shimmer.xcconfig */;
+			baseConfigurationReference = 8943EE00A9DF745BC56956C25D126B2F /* NYAlertViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3461,18 +3677,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UIView+Shimmer/UIView+Shimmer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIView+Shimmer/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NYAlertViewController/NYAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NYAlertViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/UIView+Shimmer/UIView+Shimmer.modulemap";
-				PRODUCT_MODULE_NAME = UIView_Shimmer;
-				PRODUCT_NAME = UIView_Shimmer;
+				MODULEMAP_FILE = "Target Support Files/NYAlertViewController/NYAlertViewController.modulemap";
+				PRODUCT_MODULE_NAME = NYAlertViewController;
+				PRODUCT_NAME = NYAlertViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -3482,7 +3698,7 @@
 			};
 			name = Debug;
 		};
-		8CDE4B4224607AC645F75AEB29438302 /* Debug */ = {
+		8B2E3FFC59E219B505FA38A6041AFDD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BF476F1AA2775919E390E6B066E8521 /* PopupKit.xcconfig */;
 			buildSettings = {
@@ -3498,7 +3714,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PopupKit/PopupKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PopupKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3516,169 +3732,23 @@
 			};
 			name = Debug;
 		};
-		8DC861F53B471F106BC8ACC4475EFA12 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		93BF3CCA89D819ED72491E19450F1EC1 /* Debug */ = {
+		9DF172A7B82B1D28F1447B6DBE5B859C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58543513F4F25689AE0615665EFEA6D8 /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
-				PRODUCT_MODULE_NAME = MBCircularProgressBar;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/ResourceBundle-MBCircularProgressBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MBCircularProgressBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		9826B3C82CE09B0C10170431FAD3F440 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4809A7F44E9640D87EAF22BC0EF3731D /* TAPageControl.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TAPageControl/TAPageControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TAPageControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TAPageControl/TAPageControl.modulemap";
-				PRODUCT_MODULE_NAME = TAPageControl;
-				PRODUCT_NAME = TAPageControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AE058DBDC81105AD5ED864D11B671474 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C59090690A4D1DB819D47C309C10B037 /* iCarousel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
-				PRODUCT_MODULE_NAME = iCarousel;
-				PRODUCT_NAME = iCarousel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B0B8A6F8EFE47B14FF05BC6D48CAA479 /* Release */ = {
+		A2A733E8A83DD5C5C97A115327312F8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCE922A329CE464D82D0FCB1EABD14BD /* youtube-ios-player-helper.xcconfig */;
 			buildSettings = {
@@ -3694,7 +3764,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3713,185 +3783,7 @@
 			};
 			name = Release;
 		};
-		B3F15BBE31AECA7DE378DBD1904CA9AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CAF6932994ED96AA75E4355E8A522E6 /* Pods-EvolveSDK.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-EvolveSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EvolveSDK/Pods-EvolveSDK.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B74F31D94C79B0C88B3DC01C127C9B7F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E97CA5FE347730D9419DC994AEEBEEA5 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BE4D9B12F974242A086495F85A2D09B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7A6112C00B6BD5D6B57DE69386E4878 /* lottie-ios.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/lottie-ios/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
-				PRODUCT_MODULE_NAME = Lottie;
-				PRODUCT_NAME = Lottie;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CA8546DC2BF1DE58A901804FBB0653A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 913DC60C79E8852CA556075B7F69F28A /* NYT360Video.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NYT360Video/NYT360Video-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NYT360Video/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NYT360Video/NYT360Video.modulemap";
-				PRODUCT_MODULE_NAME = NYT360Video;
-				PRODUCT_NAME = NYT360Video;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DC9F410D9437EF85D285A05660E25F91 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58543513F4F25689AE0615665EFEA6D8 /* MBCircularProgressBar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
-				PRODUCT_MODULE_NAME = MBCircularProgressBar;
-				PRODUCT_NAME = MBCircularProgressBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E754FF51A37BA8F5947489C3B4FD68F6 /* Release */ = {
+		A405B5A60D13563D4CD5F067E05D8567 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F39DD41721D06046A061698D6ABE31C /* Pods-EvolveSDK.release.xcconfig */;
 			buildSettings = {
@@ -3908,7 +3800,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EvolveSDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3932,9 +3824,9 @@
 			};
 			name = Release;
 		};
-		E8880B35B4AFCB4C5038AC64B3C250A6 /* Release */ = {
+		B2973924FBA5E4C0DC5899E7EF00D118 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E97CA5FE347730D9419DC994AEEBEEA5 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 7128D4EA99FA5CE735C65A41B175D17C /* SDWebImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3945,53 +3837,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EF355580BE3B42B9E25C0CD73064C9C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F1C66424FEFC7A990BD7CD47919AA1B /* PVOnboardKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PVOnboardKit/PVOnboardKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PVOnboardKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PVOnboardKit/PVOnboardKit.modulemap";
-				PRODUCT_MODULE_NAME = PVOnboardKit;
-				PRODUCT_NAME = PVOnboardKit;
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -4001,7 +3858,7 @@
 			};
 			name = Debug;
 		};
-		F7F58294D6A8BB7C622DD34BBD9BA2CD /* Debug */ = {
+		CA7A56896C3EF20299836CC4B515402C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0004FBD91314ED601CA570B4A017247D /* GLTFSceneKit.xcconfig */;
 			buildSettings = {
@@ -4018,7 +3875,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GLTFSceneKit/GLTFSceneKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GLTFSceneKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4037,7 +3894,178 @@
 			};
 			name = Debug;
 		};
-		FC0AE752F52CAFD1D24892857EE3C694 /* Debug */ = {
+		D4B9CCB2C6DAADAFB7FAE0E4BCE511E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913DC60C79E8852CA556075B7F69F28A /* NYT360Video.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NYT360Video/NYT360Video-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NYT360Video/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NYT360Video/NYT360Video.modulemap";
+				PRODUCT_MODULE_NAME = NYT360Video;
+				PRODUCT_NAME = NYT360Video;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9C95C5BFAA70EF51AE61704EFFDF172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE922A329CE464D82D0FCB1EABD14BD /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDA29408D411685750A485C4280DE87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1C66424FEFC7A990BD7CD47919AA1B /* PVOnboardKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PVOnboardKit/PVOnboardKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PVOnboardKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PVOnboardKit/PVOnboardKit.modulemap";
+				PRODUCT_MODULE_NAME = PVOnboardKit;
+				PRODUCT_NAME = PVOnboardKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE226BD2391E1053C1C1053D8153EF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3133019439A5A789952E3822F738B54 /* LGSideMenuController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LGSideMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LGSideMenuController/LGSideMenuController.modulemap";
+				PRODUCT_MODULE_NAME = LGSideMenuController;
+				PRODUCT_NAME = LGSideMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E563751B667E2560A91D7F2216C67EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59090690A4D1DB819D47C309C10B037 /* iCarousel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
+				PRODUCT_MODULE_NAME = iCarousel;
+				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E65BCF236628CBEBDF1AB9EE339AAECD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8943EE00A9DF745BC56956C25D126B2F /* NYAlertViewController.xcconfig */;
 			buildSettings = {
@@ -4053,7 +4081,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NYAlertViewController/NYAlertViewController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NYAlertViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4066,14 +4094,15 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		FD275D782F6DDD96F01863BE504DA228 /* Release */ = {
+		FA7D6AB44143D2897D19643C26666D52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 524B2895438780187764F52AF119DE29 /* UIView+Shimmer.xcconfig */;
+			baseConfigurationReference = 913DC60C79E8852CA556075B7F69F28A /* NYT360Video.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -4084,18 +4113,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UIView+Shimmer/UIView+Shimmer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIView+Shimmer/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NYT360Video/NYT360Video-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NYT360Video/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/UIView+Shimmer/UIView+Shimmer.modulemap";
-				PRODUCT_MODULE_NAME = UIView_Shimmer;
-				PRODUCT_NAME = UIView_Shimmer;
+				MODULEMAP_FILE = "Target Support Files/NYT360Video/NYT360Video.modulemap";
+				PRODUCT_MODULE_NAME = NYT360Video;
+				PRODUCT_NAME = NYT360Video;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -4112,8 +4141,8 @@
 		06D09C92FE2A8E3E478A897563577769 /* Build configuration list for PBXNativeTarget "GLTFSceneKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7F58294D6A8BB7C622DD34BBD9BA2CD /* Debug */,
-				1D93A93CB7A57FAC213ABDE803EFB2AD /* Release */,
+				CA7A56896C3EF20299836CC4B515402C /* Debug */,
+				5CDF255B5B906A0AE3A3724A66D059EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4121,8 +4150,8 @@
 		09600571F63852ACA3B7A23B4729B6A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B74F31D94C79B0C88B3DC01C127C9B7F /* Debug */,
-				E8880B35B4AFCB4C5038AC64B3C250A6 /* Release */,
+				4B181BEEEA42ED26F65687DF96612A63 /* Debug */,
+				1ED67928B75DD90D9F7547CCCEC132C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4130,8 +4159,8 @@
 		2C050F680514FA486128BEB2C3DD0CE2 /* Build configuration list for PBXNativeTarget "PopupKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CDE4B4224607AC645F75AEB29438302 /* Debug */,
-				3D5E8AEFF07B935AC266439D41B89938 /* Release */,
+				8B2E3FFC59E219B505FA38A6041AFDD1 /* Debug */,
+				37FFD49D5A6448C18418B28A57E1EE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4139,8 +4168,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8322AE3FB6DF16A80BCBA121575DBB8A /* Debug */,
-				8DC861F53B471F106BC8ACC4475EFA12 /* Release */,
+				85ED3013A635C27F8B7FAF51362B108C /* Debug */,
+				40B45BB3CF3EE4476259302A7FAAD78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4148,8 +4177,8 @@
 		341331E6A3D3653056BE97AB7E43B843 /* Build configuration list for PBXNativeTarget "UIView+Shimmer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87B0982BB0E18E1BE03792C7E6DAB638 /* Debug */,
-				FD275D782F6DDD96F01863BE504DA228 /* Release */,
+				7046C6CC3BCCF3422D8BF8C110974ECC /* Debug */,
+				7B4D6237A69561DA0F25D48DA7CCEA4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4157,8 +4186,8 @@
 		5E87ADCEDC69F7AD0FE8AB3D62329BB0 /* Build configuration list for PBXNativeTarget "NYT360Video" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29E1C12D7CBEE0058FA77D6B4A71169E /* Debug */,
-				CA8546DC2BF1DE58A901804FBB0653A5 /* Release */,
+				D4B9CCB2C6DAADAFB7FAE0E4BCE511E6 /* Debug */,
+				FA7D6AB44143D2897D19643C26666D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4166,8 +4195,8 @@
 		77C94DFE5FFA2FEA242D3E73623EB1E5 /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE058DBDC81105AD5ED864D11B671474 /* Debug */,
-				276C1360916B744DDECFB864D8BBF888 /* Release */,
+				E563751B667E2560A91D7F2216C67EE3 /* Debug */,
+				143847DBE7ABC03ED22EDFF3A98F853C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4175,8 +4204,8 @@
 		91C342F4D076C1669469945F566A1467 /* Build configuration list for PBXNativeTarget "lottie-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE4D9B12F974242A086495F85A2D09B1 /* Debug */,
-				1D12FD2DC538FFE7A3156D06ED463235 /* Release */,
+				031FE76807C8D3FAA6167507EB26A0F9 /* Debug */,
+				235CAA4883378168F2701145E670CD52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4184,8 +4213,8 @@
 		9A27685078F0790701592B37265B8740 /* Build configuration list for PBXNativeTarget "TAPageControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83148474C91A07E065AF79FA72B9FF4E /* Debug */,
-				9826B3C82CE09B0C10170431FAD3F440 /* Release */,
+				25EEF12D1710F4EF818566725A09BC41 /* Debug */,
+				759F892B4C440EADA2C3787F450AFD16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4193,8 +4222,8 @@
 		A1C11ECB99724E9E6F01112633706BFA /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EB11D87C13646CB50E110B13CB569FC /* Debug */,
-				260BDC313502E751187DDB52C2600992 /* Release */,
+				B2973924FBA5E4C0DC5899E7EF00D118 /* Debug */,
+				41457F92DF9D0DCA6C4E5757EDBEFD1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4202,8 +4231,8 @@
 		A1C781586ECCD49136548394C1832CD7 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E976D55E1EF0D9C0B975D7F8DC3574E /* Debug */,
-				B0B8A6F8EFE47B14FF05BC6D48CAA479 /* Release */,
+				D9C95C5BFAA70EF51AE61704EFFDF172 /* Debug */,
+				A2A733E8A83DD5C5C97A115327312F8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4211,8 +4240,8 @@
 		A848CA2919BE003566590D57409E1D0D /* Build configuration list for PBXNativeTarget "LGSideMenuController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AE8D352EDCC889CE97A89AF29A2FAA6 /* Debug */,
-				26D5F7D5A735E5D97221CC19F5803241 /* Release */,
+				DE226BD2391E1053C1C1053D8153EF63 /* Debug */,
+				81C3EA0A8AD0283CC733C95D67C1B0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4220,8 +4249,8 @@
 		B20056EC7361F005A3AC85DFE89FD804 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4540190CB8CEADB9FB79FC6BC566B698 /* Debug */,
-				6862771EC5A50BE4C73CD7C089D7647C /* Release */,
+				9DF172A7B82B1D28F1447B6DBE5B859C /* Debug */,
+				6BF5D6818B2556AD82E6F4B969EA5951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4229,8 +4258,8 @@
 		D0D201665AC4576355A7E4C742C4FCFF /* Build configuration list for PBXNativeTarget "NYAlertViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC0AE752F52CAFD1D24892857EE3C694 /* Debug */,
-				0ACDDC18320DDBD73ED3827DB0BB9156 /* Release */,
+				87D2A92BB91E12A7F4B9E870905E67B7 /* Debug */,
+				E65BCF236628CBEBDF1AB9EE339AAECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4238,8 +4267,8 @@
 		EE91ACDA7EDE7FD09C930073463F285F /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93BF3CCA89D819ED72491E19450F1EC1 /* Debug */,
-				DC9F410D9437EF85D285A05660E25F91 /* Release */,
+				12E35CA23AF9EA3AE2B1E758F3114A38 /* Debug */,
+				5025E68566D5C18A4CCE574401B0460E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4247,8 +4276,8 @@
 		EF8E8645B84C05234C2656564CB4F66C /* Build configuration list for PBXNativeTarget "PVOnboardKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF355580BE3B42B9E25C0CD73064C9C8 /* Debug */,
-				4DB076A6A6D146745987D12CCC786C90 /* Release */,
+				705DF14097CF3C352B2BD0656CACCA96 /* Debug */,
+				DDA29408D411685750A485C4280DE87C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4256,8 +4285,8 @@
 		F83B93B06ACBAFD8F82A4AB4163269A5 /* Build configuration list for PBXNativeTarget "Pods-EvolveSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3F15BBE31AECA7DE378DBD1904CA9AE /* Debug */,
-				E754FF51A37BA8F5947489C3B4FD68F6 /* Release */,
+				3204E783DB359E81CB8E4604A251DD64 /* Debug */,
+				A405B5A60D13563D4CD5F067E05D8567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
