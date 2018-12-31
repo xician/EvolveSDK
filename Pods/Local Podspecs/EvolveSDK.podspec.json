@@ -1,0 +1,65 @@
+{
+  "name": "EvolveSDK",
+  "version": "1.0",
+  "summary": "SDK for Live Campaigns only",
+  "homepage": "http://evolvear.io",
+  "license": "Evolve Innovative Solutions",
+  "authors": {
+    "EIS": ""
+  },
+  "source": {
+    "git": "https://github.com/xician/EvolveSDK.git",
+    "submodules": true,
+    "branch": "master"
+  },
+  "source_files": "Pod/Classes/*.{h,m}",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  },
+  "subspecs": [
+    {
+      "name": "subs",
+      "dependencies": {
+        "PopupKit": [
+
+        ],
+        "UIView+Shimmer": [
+
+        ],
+        "iCarousel": [
+
+        ],
+        "LGSideMenuController": [
+
+        ],
+        "MBCircularProgressBar": [
+
+        ],
+        "PVOnboardKit": [
+
+        ],
+        "SDWebImage": [
+
+        ],
+        "NYT360Video": [
+
+        ],
+        "GLTFSceneKit": [
+
+        ],
+        "lottie-ios": [
+
+        ],
+        "NYAlertViewController": [
+
+        ],
+        "MBProgressHUD": [
+
+        ]
+      }
+    }
+  ]
+}
